@@ -1,0 +1,41 @@
+{%- style -%}
+  .star-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background: #121212;
+    color: white;
+    padding: 15px;
+  }
+
+  .star-grid > * {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 11px;
+  }
+
+  .star-grid p {
+    margin: 0;
+  }
+
+  .stars {
+    margin-bottom: 5px;
+  }
+
+  .star-grid .stars-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+  }
+{%- endstyle -%}
+
+<div class="star-grid">
+  <p>3 col announcement</p>
+  <div class="stars-container">
+    <div class="stars">★★★★★</div>
+    <p>3 col announcement</p>
+  </div>
+  <p>3 col announcement</p>
+</div>
