@@ -1,5 +1,5 @@
 {%- style -%}
-  .star-grid {
+  .announcement-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -8,14 +8,14 @@
     padding: 15px;
   }
 
-  .star-grid > * {
+  .announcement-grid > * {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 11px;
   }
 
-  .star-grid p {
+  .announcement-grid p {
     margin: 0;
   }
 
@@ -23,7 +23,7 @@
     margin-bottom: 5px;
   }
 
-  .star-grid .stars-container {
+  .announcement-grid .announcement-container {
     padding-left: 10px;
     padding-right: 10px;
     border-right: 1px solid white;
@@ -31,9 +31,9 @@
   }
 {%- endstyle -%}
 
-<div class="star-grid">
+<div class="announcement-grid">
   <p>{{ section.settings.column_one }}</p>
-  <div class="stars-container">
+  <div class="announcement-container">
     <p>3 col announcement</p>
   </div>
   <p>3 col announcement</p>
