@@ -30,9 +30,9 @@
 <div class="announcement-grid">
   <p>{{ section.settings.column_one }}</p>
   <div class="announcement-container">
-    <p>3 col announcement</p>
+    <p>{{ section.settings.column_two }}</p>
   </div>
-  <p>3 col announcement</p>
+  <p>{{ section.settings.column_three }}</p>
 </div>
 
 {% schema %}
@@ -45,6 +45,18 @@
       "id": "column_one",
       "label": "Column One",
       "default": "Column One"
+    },
+    {
+      "type": "text",
+      "id": "column_two",
+      "label": "Column Two",
+      "default": "Column Two"
+    },
+    {
+      "type": "text",
+      "id": "column_three",
+      "label": "Column Three",
+      "default": "Column Three"
     }
   ],
   "presets": [
