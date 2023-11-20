@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    background: #121212;
+    background: {{ section.settings.background_color }};
     color: white;
     padding: 15px;
   }
@@ -57,6 +57,12 @@
       "id": "column_three",
       "label": "Column Three Text",
       "default": "Column Three"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#121212"
     }
   ],
   "presets": [
